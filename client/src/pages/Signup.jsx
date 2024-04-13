@@ -49,10 +49,10 @@ export default function Signup() {
         SignUp
       </h1>
       <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
-        <input type='text' onChange={handleChange} placeholder='Username' id="username" className='border rounded-lg p-3' />
-        <input type='text' onChange={handleChange} placeholder='Email' id="email" className='border rounded-lg p-3' />
-        <input type='text' onChange={handleChange} placeholder='Password' id="password" className='border rounded-lg p-3' />
-        <button className='bg-slate-700 text-white rounded-lg p-3 hover:opacity-90 disabled:opacity-80 font-medium '>{loading ? 'Loading...' : 'Sign up'}</button>
+        <input type='text' onChange={handleChange} placeholder='Username' id="username" className='border rounded-lg p-3 shadow-md' />
+        <input type='text' onChange={handleChange} placeholder='Email' id="email" className='border rounded-lg p-3 shadow-md' />
+        <input type='text' onChange={handleChange} placeholder='Password' id="password" className='border rounded-lg p-3 shadow-md' />
+        <button className='bg-slate-700 text-white rounded-lg p-3 hover:opacity-90 disabled:opacity-80 font-medium shadow-md'>{loading ? 'Loading...' : 'Sign up'}</button>
       </form> 
       <div className='flex gap-2 mt-5'> 
         <p>Have an account?</p>
@@ -61,7 +61,7 @@ export default function Signup() {
         </Link>
       </div>
       <div>
-        {error && <p className="txt-red-500">{error}</p>}
+        {error && <p className="text-red-500">{error}</p>}
       </div>
     </div>
   )

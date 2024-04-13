@@ -12,7 +12,7 @@ export default function Header() {
     </Link>
     
     <form className='bg-slate-100 rounded-lg p-3 flex items-center'>
-        <input className=' bg-transparent focus:outline-none w-24 sm:w-64' type='text' placeholder='search'/>
+        <input className=' bg-transparent focus:outline-none w-24 sm:w-64 shadow-sm' type='text' placeholder='search'/>
         <FaSearch className='text-slate-600' />
     </form>
 
